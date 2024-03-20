@@ -1,11 +1,16 @@
-from src.data_processing.data_processor import DataProcessor
-
 import pandas as pd
 import pprint
 
 class DataReport:
+    """_summary_
+    """
     
-    def pretty_print(data):
+    def pretty_print(data: pd.DataFrame) -> None:
+        """_summary_
+
+        Args:
+            data (pd.DataFrame): _description_
+        """
         if isinstance(data, dict):
             pprint.pprint(data, width=100)
         elif isinstance(data, pd.DataFrame):
