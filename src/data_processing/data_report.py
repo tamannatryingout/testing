@@ -30,11 +30,12 @@ class DataReport(DataAnalyzer):
             "Column Names and Data Types": self.get_column_names_and_datatypes(),
             "Entry Count": self.get_entry_count(),
             "Column Count": self.get_column_count(),
-            "Unique Values per Column": self.get_unique_values_per_column(),
             "Total Missing Values Count": self.get_total_missing_values_count(),
             "Missing Values per Column": self.get_missing_values_per_column(),
-            "Duplicates Check": self.check_for_duplicates(),
             "Duplicates by Identifier Check": self.check_for_duplicates_by_identifier(identifier_column='DS_100_VON'),
             "Basic Statistics for Numeric Columns": self.get_basic_statistics_for_numeric_columns()
         }
+        
+
         return data_report
+
